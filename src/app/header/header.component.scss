@@ -1,0 +1,82 @@
+.header-container {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(42, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        color: red;
+        font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+        padding-left: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .nav-bar {
+        list-style: none;
+        margin-top: 10px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        
+        li {
+            margin-right: 20px;
+            
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                transition: color 0.3s ease-in-out;
+                
+                &:hover {
+                    color: #ff0000;
+                }
+            }
+        }
+    }
+    
+    .user-info {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        
+        .user-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .user-name {
+            color: white;
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+    
+    .logout {
+        text-transform: uppercase;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: 30px;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: #ff0000;
+        }
+    }
+}

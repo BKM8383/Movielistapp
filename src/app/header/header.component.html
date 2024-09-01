@@ -1,0 +1,14 @@
+<div class="header-container">
+    <div class="logo" (click)="goToHome()">MoviesHub</div>
+    <ul class="nav-bar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Favorites</a></li>
+    </ul>
+    <div class="user-info">
+        <img class="user-img" src="{{userimg}}" />
+        <h3 class="user-name">{{name}}</h3>
+    </div>
+    <div class="logout" (click)="logout()">Logout</div>
+</div>
